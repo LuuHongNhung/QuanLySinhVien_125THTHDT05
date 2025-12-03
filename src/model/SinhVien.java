@@ -6,8 +6,16 @@ public class SinhVien extends Nguoi {
     private double diemTK;
     private List<MonHoc> monHocDangKy;
 
-    public SinhVien(String maID, String hoTen, String ngaySinh, String diaChi, List<Nguoi> danhSachMonHoc, Nguoi monitor, double diemTK, List<MonHoc> monHocDangKy) {
-        super(maID, hoTen, ngaySinh, diaChi, danhSachMonHoc, monitor);
+    public SinhVien(String maID, String hoTen, String ngaySinh, String diaChi, 
+                   List<MonHoc> danhSachMonHoc, Nguoi monitor, double diemTK, List<MonHoc> monHocDangKy) {
+        super(maID, hoTen, ngaySinh, diaChi, null, monitor);
+        this.diemTK = diemTK;
+        this.monHocDangKy = monHocDangKy;
+    }
+
+    public SinhVien(String maID, String hoTen, String ngaySinh, String diaChi, 
+                   double diemTK, List<MonHoc> monHocDangKy) {
+        super(maID, hoTen, ngaySinh, diaChi, null, null);
         this.diemTK = diemTK;
         this.monHocDangKy = monHocDangKy;
     }
@@ -26,13 +34,5 @@ public class SinhVien extends Nguoi {
 
     public void setMonHocDangKy(List<MonHoc> monHocDangKy) {
         this.monHocDangKy = monHocDangKy;
-    }
-
-    public void themSinhVien() {
-        // Code thêm sinh viên
-    }
-
-    public void themMonHocVaoList() {
-        // Code thêm môn học vào danh sách đăng ký
     }
 }
