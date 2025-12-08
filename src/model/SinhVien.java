@@ -7,32 +7,15 @@ public class SinhVien extends Nguoi {
     private List<MonHoc> monHocDangKy;
 
     public SinhVien(String maID, String hoTen, String ngaySinh, String diaChi, 
-                   List<MonHoc> danhSachMonHoc, Nguoi monitor, double diemTK, List<MonHoc> monHocDangKy) {
-        super(maID, hoTen, ngaySinh, diaChi, null, monitor);
+                   Nguoi monitor, double diemTK, List<MonHoc> monHocDangKy) {
+        super(maID, hoTen, ngaySinh, diaChi, monitor);
         this.diemTK = diemTK;
         this.monHocDangKy = monHocDangKy;
     }
 
-    public SinhVien(String maID, String hoTen, String ngaySinh, String diaChi, 
-                   double diemTK, List<MonHoc> monHocDangKy) {
-        super(maID, hoTen, ngaySinh, diaChi, null, null);
-        this.diemTK = diemTK;
-        this.monHocDangKy = monHocDangKy;
-    }
+    public double getDiemTK() { return diemTK; }
+    public void setDiemTK(double diemTK) { this.diemTK = diemTK; }
 
-    public double getDiemTK() {
-        return diemTK;
-    }
-
-    public List<MonHoc> getMonHocDangKy() {
-        return monHocDangKy;
-    }
-
-    public void setDiemTK(double diemTK) {
-        this.diemTK = diemTK;
-    }
-
-    public void setMonHocDangKy(List<MonHoc> monHocDangKy) {
-        this.monHocDangKy = monHocDangKy;
-    }
+    public List<MonHoc> getMonHocDangKy() { return monHocDangKy; }
+    public void setMonHocDangKy(List<MonHoc> monHocDangKy) { this.monHocDangKy = monHocDangKy; }
 }

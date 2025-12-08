@@ -4,6 +4,7 @@ import com.quanly.model.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class QuanLy implements IQuanLy {
     private List<SinhVien> danhSachSinhVien;
     private List<GiangVien> danhSachGiangVien;

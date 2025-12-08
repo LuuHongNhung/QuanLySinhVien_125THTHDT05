@@ -17,53 +17,21 @@ public class LopHoc {
         this.danhSachSinhVien = danhSachSinhVien;
     }
 
-    public String getMaLH() {
-        return maLH;
-    }
+    public String getMaLH() { return maLH; }
+    public void setMaLH(String maLH) { this.maLH = maLH; }
 
-    public String getTenLop() {
-        return tenLop;
-    }
+    public String getTenLop() { return tenLop; }
+    public void setTenLop(String tenLop) { this.tenLop = tenLop; }
 
-    public SinhVien getMonitor() {
-        return monitor;
-    }
+    public SinhVien getMonitor() { return monitor; }
+    public void setMonitor(SinhVien monitor) { this.monitor = monitor; }
 
-    public GiangVien getGiangVien() {
-        return giangVien;
-    }
+    public GiangVien getGiangVien() { return giangVien; }
+    public void setGiangVien(GiangVien giangVien) { this.giangVien = giangVien; }
 
-    public List<SinhVien> getDanhSachSinhVien() {
-        return danhSachSinhVien;
-    }
+    public List<SinhVien> getDanhSachSinhVien() { return danhSachSinhVien; }
+    public void setDanhSachSinhVien(List<SinhVien> danhSachSinhVien) { this.danhSachSinhVien = danhSachSinhVien; }
 
-    public void setMaLH(String maLH) {
-        this.maLH = maLH;
-    }
-
-    public void setTenLop(String tenLop) {
-        this.tenLop = tenLop;
-    }
-
-    public void setMonitor(SinhVien monitor) {
-        this.monitor = monitor;
-    }
-
-    public void setGiangVien(GiangVien giangVien) {
-        this.giangVien = giangVien;
-    }
-
-    public void setDanhSachSinhVien(List<SinhVien> danhSachSinhVien) {
-        this.danhSachSinhVien = danhSachSinhVien;
-    }
-
-    public void themSinhVien(SinhVien sv) {
-        this.danhSachSinhVien.add(sv);
-    }
-    
-    public void xoaSinhVien(SinhVien sv) {
-        this.danhSachSinhVien.remove(sv);
-    }
-    
-    public void themLopHoc() {}
+    public void themSinhVien(SinhVien sv) { this.danhSachSinhVien.add(sv); }
+    public void xoaSinhVien(SinhVien sv) { this.danhSachSinhVien.remove(sv); }
 }

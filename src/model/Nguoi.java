@@ -7,68 +7,33 @@ public class Nguoi {
     protected String hoTen;
     protected String ngaySinh;
     protected String diaChi;
-    protected List<Nguoi> danhSachMonHoc;
     protected Nguoi monitor;
 
-    public Nguoi(String maID, String hoTen, String ngaySinh, String diaChi, List<Nguoi> danhSachMonHoc, Nguoi monitor) {
+    public Nguoi(String maID, String hoTen, String ngaySinh, String diaChi, Nguoi monitor) {
         this.maID = maID;
         this.hoTen = hoTen;
         this.ngaySinh = ngaySinh;
         this.diaChi = diaChi;
-        this.danhSachMonHoc = danhSachMonHoc;
         this.monitor = monitor;
     }
 
-    public String getMaID() {
-        return maID;
-    }
+    // Getter và Setter
+    public String getMaID() { return maID; }
+    public void setMaID(String maID) { this.maID = maID; }
 
-    public String getHoTen() {
-        return hoTen;
-    }
+    public String getHoTen() { return hoTen; }
+    public void setHoTen(String hoTen) { this.hoTen = hoTen; }
 
-    public String getNgaySinh() {
-        return ngaySinh;
-    }
+    public String getNgaySinh() { return ngaySinh; }
+    public void setNgaySinh(String ngaySinh) { this.ngaySinh = ngaySinh; }
 
-    public String getDiaChi() {
-        return diaChi;
-    }
+    public String getDiaChi() { return diaChi; }
+    public void setDiaChi(String diaChi) { this.diaChi = diaChi; }
 
-    public List<Nguoi> getDanhSachMonHoc() {
-        return danhSachMonHoc;
-    }
+    public Nguoi getMonitor() { return monitor; }
+    public void setMonitor(Nguoi monitor) { this.monitor = monitor; }
 
-    public Nguoi getMonitor() {
-        return monitor;
-    }
-
-    public void setMaID(String maID) {
-        this.maID = maID;
-    }
-
-    public void setHoTen(String hoTen) {
-        this.hoTen = hoTen;
-    }
-
-    public void setNgaySinh(String ngaySinh) {
-        this.ngaySinh = ngaySinh;
-    }
-
-    public void setDiaChi(String diaChi) {
-        this.diaChi = diaChi;
-    }
-
-    public void setDanhSachMonHoc(List<Nguoi> danhSachMonHoc) {
-        this.danhSachMonHoc = danhSachMonHoc;
-    }
-
-    public void setMonitor(Nguoi monitor) {
-        this.monitor = monitor;
-    }
-
-    public void dangNhap() {}
-    public void doiMatKhau() {}
-    public void dangKy() {}
-    public void themNguoi() {}
+    // Các phương thức chung
+    public void dangNhap() { System.out.println(hoTen + " da dang nhap."); }
+    public void doiMatKhau() { System.out.println(hoTen + " da doi mat khau."); }
 }

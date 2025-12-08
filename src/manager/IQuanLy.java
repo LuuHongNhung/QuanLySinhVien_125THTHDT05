@@ -4,7 +4,6 @@ import com.quanly.model.*;
 import java.util.List;
 
 public interface IQuanLy {
-
     void themSinhVien(SinhVien sv);
     boolean suaSinhVien(String maID, SinhVien svMoi);
     boolean xoaSinhVien(String maID);

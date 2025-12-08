@@ -15,42 +15,17 @@ public class MonHoc {
         this.danhSachGiangVien = danhSachGiangVien;
     }
 
-    public String getMaMH() {
-        return maMH;
-    }
+    public String getMaMH() { return maMH; }
+    public void setMaMH(String maMH) { this.maMH = maMH; }
 
-    public String getTenMonHoc() {
-        return tenMonHoc;
-    }
+    public String getTenMonHoc() { return tenMonHoc; }
+    public void setTenMonHoc(String tenMonHoc) { this.tenMonHoc = tenMonHoc; }
 
-    public int getSoTinChi() {
-        return soTinChi;
-    }
+    public int getSoTinChi() { return soTinChi; }
+    public void setSoTinChi(int soTinChi) { this.soTinChi = soTinChi; }
 
-    public List<GiangVien> getDanhSachGiangVien() {
-        return danhSachGiangVien;
-    }
+    public List<GiangVien> getDanhSachGiangVien() { return danhSachGiangVien; }
+    public void setDanhSachGiangVien(List<GiangVien> danhSachGiangVien) { this.danhSachGiangVien = danhSachGiangVien; }
 
-    public void setMaMH(String maMH) {
-        this.maMH = maMH;
-    }
-
-    public void setTenMonHoc(String tenMonHoc) {
-        this.tenMonHoc = tenMonHoc;
-    }
-
-    public void setSoTinChi(int soTinChi) {
-        this.soTinChi = soTinChi;
-    }
-
-    public void setDanhSachGiangVien(List<GiangVien> danhSachGiangVien) {
-        this.danhSachGiangVien = danhSachGiangVien;
-    }
-
-    public void themGiangVien(GiangVien gv) {
-        this.danhSachGiangVien.add(gv);
-    }
-    
-    public void themMonHoc() {}
-    public void themMonHocSinhVien() {}
+    public void themGiangVien(GiangVien gv) { this.danhSachGiangVien.add(gv); }
 }
